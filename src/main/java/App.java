@@ -407,7 +407,7 @@ public class App implements NativeKeyListener {
     public void configurarPokemons() {
         JFrame frame = new JFrame("Pokemons Settings");
         try {
-            Image icon = ImageIO.read(new File("icon.png"));
+            Image icon = ImageIO.read(new File("data/icon.png"));
             frame.setIconImage(icon);
         } catch (IOException e) {
         }
@@ -614,7 +614,7 @@ public class App implements NativeKeyListener {
         frame.setAlwaysOnTop(true);
 
         try {
-            Image icon = ImageIO.read(new File("icon.png"));
+            Image icon = ImageIO.read(new File("data/icon.png"));
             frame.setIconImage(icon);
         } catch (IOException e) {
         }
@@ -638,7 +638,7 @@ public class App implements NativeKeyListener {
         labelTexto.setForeground(Color.WHITE);
 
         try {
-            Image imagem = ImageIO.read(new File("background.png"));
+            Image imagem = ImageIO.read(new File("data/background.png"));
             JLabel labelImagem = new JLabel(new ImageIcon(imagem));
             labelImagem.setHorizontalAlignment(SwingConstants.RIGHT);
             topPanel.add(labelImagem , BorderLayout.EAST);
@@ -740,8 +740,8 @@ public class App implements NativeKeyListener {
                 labelTeclaBike = new JLabel("Bike: " + KeyEvent.getKeyText(Bike));
                 buttonPanel.add(labelTeclaBike);
                 JButton bikeButton = new JButton("Set Bike");
-                //bikeButton.addActionListener(e -> SetandoBike());
-                bikeButton.addActionListener(e -> LocateOnScreenAndClick("Fight Button.png", coordenadas_Buttons));
+                bikeButton.addActionListener(e -> SetandoBike());
+                //bikeButton.addActionListener(e -> LocateOnScreenAndClick("data/Fight Button.png", coordenadas_Buttons));
                 buttonPanel.add(bikeButton);
             }
             if (i == 2) {
@@ -1382,7 +1382,7 @@ public class App implements NativeKeyListener {
                                         ||
                                         robot.getPixelColor(coordenadas_pixel_pretoCP[0], coordenadas_pixel_pretoCP[1])
                                                 .getBlue() < 5)){
-                                            LocateOnScreenAndClick("Fight Button.png", coordenadas_Buttons);
+                                            LocateOnScreenAndClick("data/Fight Button.png", coordenadas_Buttons);
                                             Thread.sleep(1000);
                                         }
                                         if(!Thread.currentThread().isInterrupted() && (robot
@@ -2005,7 +2005,7 @@ class AreaSelection extends JDialog {
                 try {
                     Robot robot = new Robot();
                     BufferedImage screenShot = robot.createScreenCapture(area);
-                    ImageIO.write(screenShot, "png", new File(name + ".png"));
+                    ImageIO.write(screenShot, "png", new File("data/" + name + ".png"));
                 } catch (AWTException | IOException e) {
                     e.printStackTrace();
                 }
