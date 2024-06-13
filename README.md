@@ -7,7 +7,7 @@ Os bots apresentam uma interface gráfica simples (até demais), oferecendo dive
 
 ## Funcionalidades dos Bots
 
-- **Simulação de Teclas**: O bots contam com um sistema de simulação do pressionamento de teclas (já configuradas pelos usuários) de modo que o personagem no jogo realize ações repetitivas para "farmar". Eles se baseiam na verificação de pixels para saber onde no jogo está atualmente e o que deve ser feito em seguida.
+- **Simulação de Teclas**: Os bots contam com um sistema de simulação do pressionamento de teclas (já configuradas pelos usuários) de modo que o personagem no jogo realize ações repetitivas para "farmar". Eles se baseiam na verificação de pixels para saber onde no jogo está atualmente e o que deve ser feito em seguida.
 
 - **OCR (tesseract)**: Utilizado para verificar o nome do Pokémon encontrado.
 
