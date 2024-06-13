@@ -38,7 +38,10 @@ Este bot permite que você pesque automaticamente, facilitando a coleta de itens
   <p>Gif do bot funcionando</p>
 </div>
 
-### 2. Bot de Farm de Hordas
+### 2. Bot de Farm de Hordas (XP)
 
-Este bot permite que você farme hordas pokemons automaticamente, facilitando o farm de XP e busca por pokemons shiny's.
-![image](https://github.com/RyanMazzeu/BOT-POKEMMO/assets/104333277/b2934338-a296-4ad6-bc74-5047c5883db5)
+Este bot permite que você farme hordas pokemons automaticamente, facilitando o farm de XP e busca por pokemons shiny's
+<div align="center">
+  <img src="https://github.com/RyanMazzeu/BOT-POKEMMO/assets/104333277/b2934338-a296-4ad6-bc74-5047c5883db5" alt="Imagem da Interface do Bot de Farm de Hordas" width="600">
+  <p>Imagem da interface do bot</p>
+</div>
